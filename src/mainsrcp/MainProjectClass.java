@@ -1,14 +1,14 @@
+package mainsrcp;
 
 
 import java.util.Scanner;
 
 public class MainProjectClass {
-
+	public static final String constantPigLatinOutputForV01 = "ello-hay";
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String constantPigLatinOutputForV01 = "ello-hay";
 		
 	    // create a scanner so we can read the command-line input
 	    Scanner scanner = new Scanner(System.in);
@@ -18,9 +18,10 @@ public class MainProjectClass {
 
 	    // get the input as a String
 	    String inputString = scanner.next();
+	    scanner.close(); // prevent resource leak
 	    
 	    // Invoke the method for v0.1
-	    String s = Version01.v01method01(inputString);
+	    String s = AClassVersion01.v01method01(inputString);
 
 	}
 
