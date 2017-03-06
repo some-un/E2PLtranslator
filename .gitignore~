@@ -14,4 +14,8 @@ hs_err_pid*
 .project
 .travis.yaml~
 .classpath
+.gitignore~
 bin
+dist
+test
+.gitignore~
