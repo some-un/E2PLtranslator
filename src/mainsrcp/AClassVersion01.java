@@ -27,4 +27,5 @@ public class AClassVersion01 {
 			return MainProjectClass.noCapitalsSupportReturnString;
 		else return "TODO";
 	}
+	
 }

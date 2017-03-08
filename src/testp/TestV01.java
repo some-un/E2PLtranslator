@@ -1,4 +1,5 @@
 package testp;
+
 import static org.junit.Assert.*;
 
 import mainsrcp.MainProjectClass;
@@ -23,5 +24,11 @@ public class TestV01 {
 		//assertEquals("No", AClassVersion01.v01method01("any_word"));
 		System.out.println("Done with testNotTranslateAllCapitals");
 	}
-
+	
+	@Test
+	public void testNotVowels() {
+		assertEquals(MainProjectClass.noSupportVowelsReturnString,
+				AClassVersion01.translateFromEnToPL(MainProjectClass.BeginwithVowels));
+		System.out.println("Done with testNotVowels");
+	}
 }

@@ -7,6 +7,8 @@ public class MainProjectClass {
 	public static final String constantPigLatinOutputForV01 = "ello-hay";
 	public static final String allCapitalsWord = "WASP";
 	public static final String noCapitalsSupportReturnString = "We do not support all-capitals words in this translator.";
+	public static final String BeginwithVowels = "autonomous system";
+	public static final Object noSupportVowelsReturnString = "We don't go for the autonomous systems.";
 	/**
 	 * @param args
 	 */
