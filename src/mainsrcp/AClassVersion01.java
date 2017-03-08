@@ -25,6 +25,7 @@ public class AClassVersion01 {
 	public static String translateFromEnToPL(String ENword) {
 		if (StringUtils.isAllUpperCase(ENword))
 			return MainProjectClass.noCapitalsSupportReturnString;
+		System.out.println("I want a merge conflict here!");
 		else return "TODO";
 	}
 	
