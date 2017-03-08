@@ -25,7 +25,15 @@ public class AClassVersion01 {
 	public static String translateFromEnToPL(String ENword) {
 		if (StringUtils.isAllUpperCase(ENword))
 			return MainProjectClass.noCapitalsSupportReturnString;
-		else return "TODO";
+		char[] vowels_in_English = {'a', 'e', 'i', 'o', 'u'};
+		char firstChar = ENword.charAt(0);
+		for (int i = 0; i < vowels_in_English.length; i++)
+		{
+			if (firstChar == vowels_in_English[i])
+				return MainProjectClass.noSupportVowelsReturnString;
+			else return "TODO";
+		}
+		return "TODO";
 	}
 	
 }

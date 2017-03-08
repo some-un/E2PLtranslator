@@ -5,6 +5,9 @@ import static org.junit.Assert.*;
 //import mainsrcp.MainProjectClass;
 //import mainsrcp.AClassVersion01;
 
+import mainsrcp.AClassVersion01;
+import mainsrcp.MainProjectClass;
+
 import org.junit.Test;
 
 
