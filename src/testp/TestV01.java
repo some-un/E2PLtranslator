@@ -15,5 +15,12 @@ public class TestV01 {
 		//assertEquals("No", AClassVersion01.v01method01("any_word"));
 		System.out.println("Done with testV01method01");
 	}
+	
+	@Test
+	public void testNotTranslateAllCapitals() {
+		assertEquals(MainProjectClass.noCapitalsSupportReturnString, AClassVersion01.translateFromEnToPL(MainProjectClass.allCapitalsWord));
+		//assertEquals("No", AClassVersion01.v01method01("any_word"));
+		System.out.println("Done with testNotTranslateAllCapitals");
+	}
 
 }

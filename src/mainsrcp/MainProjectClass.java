@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class MainProjectClass {
 	public static final String constantPigLatinOutputForV01 = "ello-hay";
+	public static final String allCapitalsWord = "WASP";
+	public static final String noCapitalsSupportReturnString = "We do not support all-capitals words in this translator.";
 	/**
 	 * @param args
 	 */
