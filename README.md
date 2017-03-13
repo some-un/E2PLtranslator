@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/some-un/E2PLtranslator.svg?branch=master)](https://travis-ci.org/some-un/E2PLtranslator)
+
 #E2PLtranslator
 
 ##English to Pig Latin translator
