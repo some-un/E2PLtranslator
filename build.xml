@@ -6,7 +6,7 @@
 	<property name="dist.dir" location="dist" />
 	<property name="test.dir" location="test" />
 	<property name="lib.dir" value="lib" />
-<!-- -->
+
 	<path id="src.class.path">
 		<pathelement location="${build.dir}" />
 		<fileset dir="${lib.dir}">
