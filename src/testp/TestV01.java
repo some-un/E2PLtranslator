@@ -31,7 +31,7 @@ public class TestV01 {
 	@Test
 	public void testNotVowels() {
 		assertEquals(MainProjectClass.noSupportVowelsReturnString,
-				AClassVersion01.translateFromEnToPL(MainProjectClass.BeginwithVowels));
+				AClassVersion01.translateFromEnToPL(MainProjectClass.beginWithVowels));
 		System.out.println("Done with testNotVowels");
 	}
 
