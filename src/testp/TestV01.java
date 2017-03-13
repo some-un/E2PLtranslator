@@ -28,10 +28,10 @@ public class TestV01 {
 		System.out.println("Done with testNotTranslateAllCapitals");
 	}
 	
-//	@Test
-//	public void testNotVowels() {
-//		assertEquals(MainProjectClass.noSupportVowelsReturnString,
-//				AClassVersion01.translateFromEnToPL(MainProjectClass.BeginwithVowels));
-//		System.out.println("Done with testNotVowels");
-//	}
+	@Test
+	public void testNotVowels() {
+		assertEquals(MainProjectClass.noSupportVowelsReturnString,
+				AClassVersion01.translateFromEnToPL(MainProjectClass.BeginwithVowels));
+		System.out.println("Done with testNotVowels");
+	}
 }
