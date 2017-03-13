@@ -13,6 +13,7 @@ public class MainProjectClass {
 	public static final String noSupportShortWordssReturnString = "Sorry, we do not support words shorter than 5 characters!";
     public static final String noSupportForCertainWords = "We do not support translation of this word, sorry dude.";
     public static final String aCertainWord = "WASP";
+    public static final String translationSuffix = "_" + aCertainWord;
 	/**
 	 * @param args
 	 */

@@ -19,26 +19,35 @@ public class AClassVersion01 {
 	    // Print the constant word in Pig Latin (v0.1)
 	    System.out.println(String.format("The Pig says: %s", MainProjectClass.constantPigLatinOutputForV01));
 	    
-	    return MainProjectClass.constantPigLatinOutputForV01;
+	    return MainProjectClass.constantPigLatinOutputForV01 + MainProjectClass.translationSuffix;
 	}
 
 	public static String translateFromEnToPL(String ENword) {
-		if (ENword.equals(MainProjectClass.aCertainWord))
-			return MainProjectClass.noSupportForCertainWords;
-		if (StringUtils.isAllUpperCase(ENword))
-			return MainProjectClass.noCapitalsSupportReturnString;
-		if (ENword.length() < 5)
-			return MainProjectClass.noSupportShortWordssReturnString;
-
+		String translation = "TODO";
+		//MainProjectClass.aCertainWord;
+		if (ENword.equals(MainProjectClass.aCertainWord)) {
+			translation = MainProjectClass.noSupportForCertainWords;
+			return translation + MainProjectClass.translationSuffix;
+		}
+		if (StringUtils.isAllUpperCase(ENword)) {
+			translation = MainProjectClass.noCapitalsSupportReturnString;
+			return translation + MainProjectClass.translationSuffix;
+		}
+		if (ENword.length() < 5) {
+			translation = MainProjectClass.noSupportShortWordssReturnString;
+			return translation + MainProjectClass.translationSuffix;
+		}
 		char[] vowels_in_English = {'a', 'e', 'i', 'o', 'u'};
 		char firstChar = ENword.charAt(0);
 		for (int i = 0; i < vowels_in_English.length; i++)
 		{
-			if (firstChar == vowels_in_English[i])
-				return MainProjectClass.noSupportVowelsReturnString;
-			else return "TODO";
+			if (firstChar == vowels_in_English[i]) {
+				translation = MainProjectClass.noSupportVowelsReturnString;
+				return translation + MainProjectClass.translationSuffix;
+			}
+			else return translation + MainProjectClass.translationSuffix;
 		}
-		return "TODO";
+		return translation + MainProjectClass.translationSuffix;
 	}
 	
 }

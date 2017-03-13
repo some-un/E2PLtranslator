@@ -18,14 +18,14 @@ public class TestV01 {
 
 	@Test
 	public void testV01method01() {
-		assertEquals(MainProjectClass.constantPigLatinOutputForV01, AClassVersion01.v01method01("any_word"));
+		assertEquals(MainProjectClass.constantPigLatinOutputForV01 + MainProjectClass.translationSuffix, AClassVersion01.v01method01("any_word"));
 		//assertEquals("No", AClassVersion01.v01method01("any_word"));
 		System.out.println("Done with testV01method01");
 	}
 	
 	@Test
 	public void testNotTranslateAllCapitals() {
-		assertEquals(MainProjectClass.noCapitalsSupportReturnString,
+		assertEquals(MainProjectClass.noCapitalsSupportReturnString + MainProjectClass.translationSuffix,
 				AClassVersion01.translateFromEnToPL(MainProjectClass.allCapitalsWord));
 		//assertEquals("No", AClassVersion01.v01method01("any_word"));
 		System.out.println("Done with testNotTranslateAllCapitals");
@@ -33,21 +33,21 @@ public class TestV01 {
 	
 	@Test
 	public void testNotVowels() {
-		assertEquals(MainProjectClass.noSupportVowelsReturnString,
+		assertEquals(MainProjectClass.noSupportVowelsReturnString + MainProjectClass.translationSuffix,
 				AClassVersion01.translateFromEnToPL(MainProjectClass.beginWithVowels));
 		System.out.println("Done with testNotVowels");
 	}
 	
 	@Test
 	public void testNotShortWords() {
-		assertEquals(MainProjectClass.noSupportShortWordssReturnString,
+		assertEquals(MainProjectClass.noSupportShortWordssReturnString + MainProjectClass.translationSuffix,
 				AClassVersion01.translateFromEnToPL(MainProjectClass.ShortWord));
 		System.out.println("Done with testNotShortWords");
 	}
 
   @Test
 	public void testNotTranslateCertainWords() {
-	    assertEquals(MainProjectClass.noSupportForCertainWords,
+	    assertEquals(MainProjectClass.noSupportForCertainWords + MainProjectClass.translationSuffix,
 			 AClassVersion01.translateFromEnToPL(MainProjectClass.aCertainWord));
 	    System.out.println("Done with testNotTranslateCertainWords");
 	}
