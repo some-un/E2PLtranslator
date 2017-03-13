@@ -23,10 +23,10 @@ public class AClassVersion01 {
 	}
 
 	public static String translateFromEnToPL(String ENword) {
+		if (ENword.equals(MainProjectClass.aCertainWord))
+			return MainProjectClass.noSupportForCertainWords;
 		if (StringUtils.isAllUpperCase(ENword))
 			return MainProjectClass.noCapitalsSupportReturnString;
-//		if (ENword.length() < 5)
-//			return MainProjectClass.noSupportShortWordsReturnString;
 //<<<<<<< HEAD
 		char[] vowels_in_English = {'a', 'e', 'i', 'o', 'u'};
 		char firstChar = ENword.charAt(0);
