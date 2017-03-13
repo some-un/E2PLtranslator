@@ -34,4 +34,11 @@ public class TestV01 {
 				AClassVersion01.translateFromEnToPL(MainProjectClass.BeginwithVowels));
 		System.out.println("Done with testNotVowels");
 	}
+
+        @Test
+	public void testNotTranslateCertainWords() {
+	    assertEquals(MainProjectClass.noSupportForCertainWords,
+			 AClassVersion01.translateFromEnToPL(MainProjectClass.aCertainWord));
+	    System.out.println("Done with testNotTranslateCertainWords");
+	}
 }
