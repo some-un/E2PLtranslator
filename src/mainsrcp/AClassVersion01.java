@@ -39,7 +39,6 @@ public class AClassVersion01 {
 			else return "TODO";
 		}
 		return "TODO";
-
 	}
 	
 }
