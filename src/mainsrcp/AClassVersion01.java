@@ -25,6 +25,9 @@ public class AClassVersion01 {
 	public static String translateFromEnToPL(String ENword) {
 		if (StringUtils.isAllUpperCase(ENword))
 			return MainProjectClass.noCapitalsSupportReturnString;
+//		if (ENword.length() < 5)
+//			return MainProjectClass.noSupportShortWordsReturnString;
+//<<<<<<< HEAD
 		char[] vowels_in_English = {'a', 'e', 'i', 'o', 'u'};
 		char firstChar = ENword.charAt(0);
 		for (int i = 0; i < vowels_in_English.length; i++)
@@ -34,6 +37,10 @@ public class AClassVersion01 {
 			else return "TODO";
 		}
 		return "TODO";
+//=======
+		//System.out.println("I want a merge conflict here!");
+		//else return "TODO";
+//>>>>>>> 38835fb6201ff9839eee89ca5724115c0cb5bc8c
 	}
 	
 }
