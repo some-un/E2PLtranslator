@@ -27,6 +27,8 @@ public class AClassVersion01 {
 			return MainProjectClass.noSupportForCertainWords;
 		if (StringUtils.isAllUpperCase(ENword))
 			return MainProjectClass.noCapitalsSupportReturnString;
+		if (ENword.length() < 5)
+			return MainProjectClass.noSupportShortWordssReturnString;
 //<<<<<<< HEAD
 		char[] vowels_in_English = {'a', 'e', 'i', 'o', 'u'};
 		char firstChar = ENword.charAt(0);

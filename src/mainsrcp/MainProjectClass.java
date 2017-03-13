@@ -9,8 +9,11 @@ public class MainProjectClass {
 	public static final String noCapitalsSupportReturnString = "We do not support all-capitals words in this translator.";
 	public static final String beginWithVowels = "autonomous system";
 	public static final String noSupportVowelsReturnString = "We don't go for the autonomous systems.";
-        public static final String noSupportForCertainWords = "We do not support translation of this word, sorry dude.";
-        public static final String aCertainWord = "WASP";
+	public static String ShortWord = "ros";
+	public static final String noSupportShortWordssReturnString = "Sorry, we do not support words shorter than 5 characters!";
+  public static final String noSupportForCertainWords = "We do not support translation of this word, sorry dude.";
+  public static final String aCertainWord = "WASP";
+
 	/**
 	 * @param args
 	 */
