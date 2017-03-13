@@ -12,4 +12,4 @@ Here's what you need to do in order to:
 
 * RUN the product: use the (Assignment2.)jar file from "dist" directory.
 
-* TEST the product: use Ant and the "junit" task.
+* TEST the product: use Ant and the "test" task.
