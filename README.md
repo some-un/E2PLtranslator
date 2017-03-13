@@ -1,8 +1,8 @@
-# E2PLtranslator
+#E2PLtranslator
 
-English to Pig Latin translator
+##English to Pig Latin translator
 
-Iteration 1, task 5:
+###Iteration 1, task 5:
 
 Here's what you need to do in order to:
 
