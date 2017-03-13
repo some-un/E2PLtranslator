@@ -6,7 +6,7 @@
 
 ###Iteration 1, task 5:
 
-* Here's what you need to do in order to:
+Here's what you need to do in order to:
 
 * BUILD the product: use Ant and the "compile" task.
 
