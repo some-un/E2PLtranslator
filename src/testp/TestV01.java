@@ -34,4 +34,11 @@ public class TestV01 {
 				AClassVersion01.translateFromEnToPL(MainProjectClass.BeginwithVowels));
 		System.out.println("Done with testNotVowels");
 	}
+	
+	@Test
+	public void testNotShortWords() {
+		assertEquals(MainProjectClass.noSupportShortWordssReturnString,
+				AClassVersion01.translateFromEnToPL(MainProjectClass.ShortWord));
+		System.out.println("Done with testNotShortWords");
+	}
 }
