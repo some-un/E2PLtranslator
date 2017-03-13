@@ -7,8 +7,10 @@ public class MainProjectClass {
 	public static final String constantPigLatinOutputForV01 = "ello-hay";
 	public static final String allCapitalsWord = "WASPIE";
 	public static final String noCapitalsSupportReturnString = "We do not support all-capitals words in this translator.";
-	public static final String BeginwithVowels = "autonomous system";
+	public static final String beginWithVowels = "autonomous system";
 	public static final String noSupportVowelsReturnString = "We don't go for the autonomous systems.";
+	public static final String shortWord = "ros";
+	public static final String noSupportShortWordsReturnString = "Sorry, We don't support words shorter than 5 characters!";
 	/**
 	 * @param args
 	 */
@@ -30,3 +32,6 @@ public class MainProjectClass {
 	}
 
 }
+
+// javaCamelStyle
+// open_source_style
