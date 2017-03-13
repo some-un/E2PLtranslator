@@ -23,6 +23,8 @@ public class AClassVersion01 {
 	}
 
 	public static String translateFromEnToPL(String ENword) {
+		if (ENword.equals(MainProjectClass.aCertainWord))
+			return MainProjectClass.noSupportForCertainWords;
 		if (StringUtils.isAllUpperCase(ENword))
 			return MainProjectClass.noCapitalsSupportReturnString;
 //<<<<<<< HEAD
