@@ -42,3 +42,11 @@ public class TestV01 {
 		System.out.println("Done with testNotShortWords");
 	}
 }
+
+  @Test
+	public void testNotTranslateCertainWords() {
+	    assertEquals(MainProjectClass.noSupportForCertainWords,
+			 AClassVersion01.translateFromEnToPL(MainProjectClass.aCertainWord));
+	    System.out.println("Done with testNotTranslateCertainWords");
+	}
+}
