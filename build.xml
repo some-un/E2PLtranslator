@@ -54,7 +54,8 @@
 		</jar>
 	</target>
 
-	<target name="junit" depends="compile">
+	<!-- <target name="junit" depends="compile"> -->
+	<target name="test" depends="compile">
 		<junit printsummary="yes" haltonfailure="yes" fork="true">
 			<!--<classpath refid="classpath-junit" /> -->
 			<classpath>
@@ -107,7 +108,7 @@
 		</java>
 	</target>
 
-	<target name="maint" depends="junit,jar,clean_cls_n_tst">
+	<target name="maint" depends="test,jar,clean_cls_n_tst">
 		<description>Main target</description>
 	</target>
 
