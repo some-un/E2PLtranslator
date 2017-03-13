@@ -2,6 +2,9 @@ package testp;
 
 import static org.junit.Assert.*;
 
+import java.nio.charset.Charset;
+import java.util.Random;
+
 //import mainsrcp.MainProjectClass;
 //import mainsrcp.AClassVersion01;
 
@@ -48,4 +51,33 @@ public class TestV01 {
 			 AClassVersion01.translateFromEnToPL(MainProjectClass.aCertainWord));
 	    System.out.println("Done with testNotTranslateCertainWords");
 	}
+  
+  @Test
+	public void testExtendThePigLatinRules() {
+	  int testIterationsCount = 1000;
+	  Random rand = new Random();
+	  int stringMaxLen = 15;
+	  int stringLen = -1;
+	  for (int i = 0; i < testIterationsCount; i++) {
+		  stringLen= rand.nextInt(stringMaxLen) + 1;
+		  String pigLatinTranslation = AClassVersion01.translateFromEnToPL(getRandomStringOfLength(stringLen));
+		    assertTrue("The returned translation did not contain WASP name :(",
+		    		pigLatinTranslation.contains(MainProjectClass.aCertainWord));
+	  }
+	    System.out.println("testExtendThePigLatinRules");
+	}
+  
+  /*
+   *   Below you'll find a test API for some of the tests we run.
+   *   The API consists of some utility functions to make tests more interesting.
+   */
+  
+  public String getRandomStringOfLength(int randomStringLength) {
+	  byte[] array = new byte[randomStringLength]; // length is bounded by 7
+	  new Random().nextBytes(array);
+	  String generatedString = new String(array, Charset.forName("UTF-8"));
+	  //
+	  return generatedString;
+  }
+  
 }
